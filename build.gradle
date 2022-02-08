@@ -24,9 +24,6 @@ tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
     }
 }
 
-tasks.release.finalizedBy "closeAndReleaseSonatypeStagingRepository"
-tasks.closeAndReleaseSonatypeStagingRepository.dependsOn tasks.publishToSonatype
-
 publishing {
     publications {
         mavenJava(MavenPublication) {

@@ -1,9 +1,19 @@
 plugins {
     id("org.jetbrains.kotlin.jvm") version "1.5.31"
     id "nebula.release" version "16.0.0"
+    id 'nebula.contacts' version '6.0.0'
+    id 'nebula.info' version '11.2.0'
     id 'nebula.maven-publish' version '17.0.0'
+    id 'nebula.maven-apache-license' version '17.0.0'
     id "maven-publish"
     id("io.github.gradle-nexus.publish-plugin") version "1.1.0"
+}
+
+contacts {
+    'justin@halfempty.org' {
+        moniker 'Justin Ryan'
+        github 'quidryan'
+    }
 }
 
 java {
@@ -12,6 +22,7 @@ java {
 }
 
 group = 'org.halfempty'
+description = 'Euler Problem solutions'
 
 repositories {
     mavenCentral()

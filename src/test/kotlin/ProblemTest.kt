@@ -37,4 +37,10 @@ internal class ProblemTest {
         assertEquals( 25164150, Problem6().solve(100).result)
     }
 
+    @Test
+    fun solve7() {
+        assertEquals( 13, Problem7().solve(6).result)
+        assertEquals( 104743, Problem7().solve(10001).result)
+    }
+
 }

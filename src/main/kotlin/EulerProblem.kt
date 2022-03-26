@@ -1,5 +1,5 @@
 interface EulerProblem<T> {
-    fun solve() : EulerSolution<T>
+    fun solve(t: T): EulerSolution<T>
 }
 
 class EulerSolution<T>(t: T){

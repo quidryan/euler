@@ -12,10 +12,10 @@ class Problem2 : EulerProblem<Int> {
         }
     }
 
-    override fun solve(): EulerSolution<Int> {
+    override fun solve(t: Int): EulerSolution<Int> {
         return EulerSolution(
             fibonacci()
-                .takeWhile { it < 4_000_000 }
+                .takeWhile { it < t }
                 .filter { it % 2 == 0 }
                 .sum())
     }
